@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIN</title>
+    <style>
+        h1{text-align: center;
+            padding-top: 10%;
+            color: blue;
+        }
+        p{
+            text-align: center;
+            color: red;
+        }
+        button{
+            background-color: red;
+            color: white;
+            margin-left: 24%;
+            margin-bottom: 5%;
+        }
+        .image-container {
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 20px;
+}
+
+.side-by-side-image {
+  margin: 0 10px;
+}
+    </style>
+</head>
+<body>
+    <h1>HELLO THIS IS {{ name }} AND THIS IS MY DIRECTIVES PAGE</h1>
+<p>{{ statement }}</p>
+<button (click)="changeBackgroundColor()">Change Background Color</button>
+<button (click)="revertBackgroundColor()">Revert Background Color</button>
+<p>This is how it looks like in the code:</p>
+
+<div class="image-container">
+  <img src="/assets/3.png" class="side-by-side-image">
+  <img src="/assets/3.5.png" class="side-by-side-image">
+</div>
+</body>
+</html>

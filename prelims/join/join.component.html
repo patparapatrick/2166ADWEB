@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIN</title>
+    <style>
+        h1{text-align: center;
+            padding-top: 10%;
+            color: blue;
+        }
+        p{
+            text-align: center;
+            color: red;
+        }
+        button{
+            background-color: red;
+            color: white;
+            margin-left: 24%;
+            margin-bottom: 5%;
+        }
+        .image-container {
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 20px;
+}
+
+.side-by-side-image {
+  margin: 0 10px;
+}
+label{
+    margin-left: 40%;
+    color: red;
+}
+    </style>
+</head>
+<body>
+    <h1>HELLO THIS IS {{ name }} AND THIS IS MY TWO-WAY DATA BINDING PAGE</h1>
+<p>{{ statement }}</p>
+
+
+<label for="username">Username:</label>
+<input type="text" id="username" [(ngModel)]="username">
+<p>You entered: {{ username }}</p>
+
+<p>This is how it looks like in the code:</p>
+<div class="image-container">
+  <img src="/assets/4.png" class="side-by-side-image">
+  <img src="/assets/4.5.png" class="side-by-side-image">
+</div>
+</body>
+</html>
